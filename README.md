@@ -1,4 +1,6 @@
 Board game page made with react and styled-components API https://styled-components.com/docs/api
+
+
 Hompage:
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game1.png)
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game2.png)
