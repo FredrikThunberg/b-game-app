@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/FredrikThunberg/B-game.git/static/js/main.a0913c7c.chunk.js",
+    "main.js.map": "/FredrikThunberg/B-game.git/static/js/main.a0913c7c.chunk.js.map",
+    "runtime-main.js": "/FredrikThunberg/B-game.git/static/js/runtime-main.47a87dc6.js",
+    "runtime-main.js.map": "/FredrikThunberg/B-game.git/static/js/runtime-main.47a87dc6.js.map",
+    "static/js/2.1d6744d4.chunk.js": "/FredrikThunberg/B-game.git/static/js/2.1d6744d4.chunk.js",
+    "static/js/2.1d6744d4.chunk.js.map": "/FredrikThunberg/B-game.git/static/js/2.1d6744d4.chunk.js.map",
+    "index.html": "/FredrikThunberg/B-game.git/index.html",
+    "static/js/2.1d6744d4.chunk.js.LICENSE.txt": "/FredrikThunberg/B-game.git/static/js/2.1d6744d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47a87dc6.js",
+    "static/js/2.1d6744d4.chunk.js",
+    "static/js/main.a0913c7c.chunk.js"
+  ]
+}
