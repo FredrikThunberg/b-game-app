@@ -15,7 +15,7 @@ Why not make an "amazon" website but intended for the board game scene and here 
 
 
 - [x] *My goal is to continue to develop this site* <br>
-*this page is only for me as a project to develop my skills*
+
 
 ## Hompage ##
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgame1.png)
@@ -30,3 +30,5 @@ Why not make an "amazon" website but intended for the board game scene and here 
 
 ## Cart page ##
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgamecart.png)
+
+*This page is only for me as a project to develop my skills*
