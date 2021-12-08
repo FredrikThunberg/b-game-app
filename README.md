@@ -7,7 +7,7 @@ React Router  | [React Router](https://reactrouter.com/)
 Styled-components  | [Styled-components](https://styled-components.com/docs/api)
 
 This page is a ***E-commerce website*** for board games (only front end). <br>
-you can visit this pages <kbd>Tab</kbd> Home, Register, Sign in, Cart, Categories, Categorie.
+you can visit this pages <kbd>⇥</kbd> Home, Register, Sign in, Cart, Categories, Categorie.
 
 ## Hompage ##
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game1.png)
