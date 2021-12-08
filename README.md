@@ -17,18 +17,18 @@ Why not make an "amazon" website but intended for the board game scene and here 
 - [x] *My goal is to continue to develop this site*
 
 ## Hompage ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game1.png)
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game2.png)
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game3.png)
+![Alt text]()
+![Alt text]()
+![Alt text]()
 
 ## Product page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game-productpage.png)
+![Alt text]()
 
 ## Create account page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game-createaccount.png)
+![Alt text]()
 
 ## Login page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game-login.png)
+![Alt text]()
 
 ## Cart page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game-cart.png)
+![Alt text]()
