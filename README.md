@@ -4,9 +4,10 @@ a page made with react and styled-components API https://styled-components.com/d
 (unfortunately the page is not live)
 
 * Technology
- * Nested bullet
-   * Sub-nested bullet etc
-* Bullet list item 2
+    * React
+          * React Router
+          * Styled-Components 
+
 
 
 Hompage:
