@@ -9,7 +9,7 @@ React  |
 React Router  |
 Styled-components  |
 
-[Named Link](https://styled-components.com/docs/api "Styled-components")
+[Styled-components](https://styled-components.com/docs/api)
 
 
 Hompage:
