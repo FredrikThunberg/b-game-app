@@ -5,7 +5,7 @@ a page made with react and styled-components API https://styled-components.com/d
 
 Technology  | Second Header
 ------------- | -------------
-Content Cell  | Content Cell
+React  | - [x] A completed task
 Content Cell  | Content Cell
 
 
