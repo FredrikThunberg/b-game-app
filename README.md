@@ -1,16 +1,13 @@
 ## B-Game 
 
-a page made with react and styled-components API https://styled-components.com/docs/api
-(unfortunately the page is not live)
-
-
 Technology Used  | Link
 ------------- | -------------
 React  | [React](https://reactjs.org/)
 React Router  | [React Router](https://reactrouter.com/)
 Styled-components  | [Styled-components](https://styled-components.com/docs/api)
 
-
+This page is a ***E-commerce website*** for board games (only front end).
+you can visit this pages Home, Register, Sign in, Cart, Categories, Categorie.
 
 ## Hompage ##
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game-photos/B-game1.png)
