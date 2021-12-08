@@ -6,7 +6,7 @@ a page made with react and styled-components API https://styled-components.com/d
 * Technology
     * React
           * React Router
-          * Styled-Components 
+               * Styled-Components 
 
 
 
