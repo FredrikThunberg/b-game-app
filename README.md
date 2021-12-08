@@ -1,4 +1,4 @@
-## B-Game  :game_die:
+ B-Game  :game_die:
 
 Technology Used  | Link
 ------------- | -------------
@@ -15,6 +15,7 @@ Why not make an "amazon" website but intended for the board game scene and here 
 
 
 - [x] *My goal is to continue to develop this site*
+*this page is only for me as a project to develop my skills*
 
 ## Hompage ##
 ![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgame1.png)
