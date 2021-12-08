@@ -9,6 +9,9 @@ React  |
 React Router  |
 Styled-components  |
 
+
+[React](https://reactjs.org/)
+[React Router](https://reactrouter.com/)
 [Styled-components](https://styled-components.com/docs/api)
 
 
