@@ -6,7 +6,7 @@ React  | [React](https://reactjs.org/)
 React Router  | [React Router](https://reactrouter.com/)
 Styled-components  | [Styled-components](https://styled-components.com/docs/api)
 
-This page is a ***E-commerce website*** for board games (only front end).
+This page is a ***E-commerce website*** for board games (only front end). <br>
 you can visit this pages Home, Register, Sign in, Cart, Categories, Categorie.
 
 ## Hompage ##
