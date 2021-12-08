@@ -3,10 +3,10 @@
 a page made with react and styled-components API https://styled-components.com/docs/api
 (unfortunately the page is not live)
 
-Technology  | Second Header
-------------- | -------------
-React  |  - [x] A completed task
-Content Cell  | Content Cell
+* Technology
+ * Nested bullet
+   * Sub-nested bullet etc
+* Bullet list item 2
 
 
 Hompage:
