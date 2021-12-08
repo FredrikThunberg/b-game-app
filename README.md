@@ -14,7 +14,7 @@ Why not make an "amazon" website but intended for the board game scene and here 
 <br>You can visit this pages :arrow_right: *Home*, *Register*, *Sign in*, *Cart*, *Categories*, *Categorie*.
 
 
-- [x] *My goal is to continue to develop this site*
+- [x] *My goal is to continue to develop this site* <br>
 *this page is only for me as a project to develop my skills*
 
 ## Hompage ##
