@@ -1,4 +1,4 @@
-Board game page made with react and styled-components API https://styled-components.com/docs/api
+## Board game page made with react and styled-components API https://styled-components.com/docs/api
 (unfortunately the page is not live)
 
 
