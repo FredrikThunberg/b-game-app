@@ -3,10 +3,10 @@
 a page made with react and styled-components API https://styled-components.com/docs/api
 (unfortunately the page is not live)
 
-* Technology
-    * React
-          * React Router
-               * Styled-Components 
+Left aligned Header |
+| :--- 
+Content Cell  |
+Content Cell  |
 
 
 
