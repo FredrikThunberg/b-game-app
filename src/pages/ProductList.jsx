@@ -39,7 +39,7 @@ const Option = styled.option`
 
 const ProductList = () => {
     return (
-       <Container>
+        <Container id="ProductList">
             <Navbar />
             <Announcement />
             <Title>Board Games</Title>

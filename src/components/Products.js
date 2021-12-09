@@ -15,8 +15,8 @@ justify-content: space-between;
 const Products = () => {
     return (
         <Container>
-            {popularProducts.map(item =>(
-                <Product item={item} key={item.id}/>
+            {popularProducts.map(item => (
+                <Product item={item} key={item.id} />
             ))}
         </Container>
     )

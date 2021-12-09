@@ -3,7 +3,10 @@ import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import { AddOutlined, Remove } from "@material-ui/icons";
-import { mobile } from "../Responsive";
+import { mobile, } from "../Responsive";
+import { useState } from "react";
+
+
 
 
 const Container = styled.div`
@@ -25,6 +28,7 @@ const Image = styled.img`
 width: 100%;
 height: 90vh;
 object-fit: cover;
+
 ${mobile({ height: "75%" })}
 `;
 
@@ -56,7 +60,7 @@ justify-content: space-between;
 ${mobile({ width: "100%" })}
 `;
 
-const AmountContainer= styled.div`
+const AmountContainer = styled.div`
 display: flex;
 align-items: center;
 font-weight: 700;
@@ -66,7 +70,7 @@ cursor: pointer;
 const Amount = styled.span`
 width: 30px;
 height: 30px;
-border: 1px solid teal;
+border: 1px solid lightgrey;
 border-radius: 10px;
 display: flex;
 align-items: center;
@@ -76,7 +80,7 @@ margin: 0 8px;
 
 const Button = styled.button`
 padding: 8px;
-background-color: teal;
+background-color: #4e2dbb;
 color: white;
 border: 2px solid black;
 cursor: pointer;
@@ -88,35 +92,55 @@ font-weight: 500;
 `;
 
 const ProductPage = () => {
-return (
-<Container>
-    <Navbar />
-    <Announcement />
-    <Wrapper>
-        <ImgContainer>
-                <Image src="https://manofmany.com/wp-content/uploads/2020/02/Best-board-games-Scythe.jpg" />
-        </ImgContainer>
-        <InfoContainer>
-                <Title>Scythe</Title>
-                <Description>What began as a wildly successful Kickstarter campaign became this wildly popular engine-building game,
-                 which recently landed at #9 on BoardGameGeek’s list of the best board games. 
-                 Like something out of a dystopian film, 
-                 it takes place in a retro-futuristic alternate 1920s Europe. Using your wits, your resources, 
-                 and your dieselpunk war machines, you must amass the most coins before the game ends.</Description>
-            <Price>$ 20</Price>
-            <AddContainer>
-                <AmountContainer>
-                    <Remove />
-                    <Amount>1</Amount>
-                    <AddOutlined />
-                </AmountContainer>
-                <Button>ADD TO CART</Button>
-            </AddContainer>
-        </InfoContainer>
-    </Wrapper>
-    <Footer />
-</Container>
-)
+
+    //incresment and decresment
+    const [products, setProducts] = useState({
+        count: 0
+    });
+
+    const handleChange = (e) => {
+        setProducts({ count: e.target.value || 0 }); //as long it has a value, then increase and decrease functions will work,
+
+    };
+
+    const decrease = (e) => {
+        if (products.count <= 0) { // when it hits 0 it's a false statement and will stop decrease the value
+            return;
+        }
+        setProducts({ count: products.count - 1 });
+    };
+
+
+
+    return (
+        <Container>
+            <Navbar />
+            <Announcement />
+            <Wrapper>
+                <ImgContainer>
+                    <Image src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/aa/AAA3GO4DLRM01626827205669.png" />
+                </ImgContainer>
+                <InfoContainer>
+                    <Title>World of Warcraft: Wrath of the Lich King - A Pandemic System Board Game</Title>
+                    <Description>In the Wrath of the Lich King board game, players control one of Azeroth’s
+                        heroes and fight their way through the Scourge to reach the throne of fallen Prince
+                        Arthas, now feared throughout Azeroth as the terrifying Lich King. Adventure across
+                        the frozen continent of Northrend, take on quests, battle monstrous entities,
+                        and more to retake Azeroth from the Lich King.</Description>
+                    <Price>$ 59.99</Price>
+                    <AddContainer>
+                        <AmountContainer>
+                            <Remove onClick={decrease} />
+                            <Amount onChange={handleChange} >{products.count}</Amount>
+                            <AddOutlined onClick={() => setProducts({ count: products.count + 1 })} />
+                        </AmountContainer>
+                        <Button>ADD TO CART</Button>
+                    </AddContainer>
+                </InfoContainer>
+            </Wrapper>
+            <Footer />
+        </Container>
+    )
 }
 
 export default ProductPage;

@@ -1,10 +1,13 @@
 import { Facebook, Instagram, MailOutlined, PhoneAndroidOutlined, RoomOutlined, Twitter } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { mobile } from '../Responsive';
+import { mobile, mobiles } from '../Responsive';
+
 
 const Container = styled.div`
 display: flex;
-${mobile({ flexDirection: "column" })}
+${mobile({ display: "flex", flexDirection: "column" })}
+${mobiles({ display: "flex", flexDirection: "column" })}
 `;
 const Left = styled.div`
 flex: 1;
@@ -30,7 +33,7 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 color: white;
-background-color: #${props=>props.color};
+background-color: #${props => props.color};
 display: flex;
 align-items: center;
 justify-content: center;
@@ -78,6 +81,10 @@ const Payment = styled.img`
 width: 50%;
 `;
 
+const StyledLink = styled(Link)`
+text-decoration: none;
+color:black;
+`;
 
 const Footer = () => {
     return (
@@ -104,9 +111,8 @@ const Footer = () => {
             <Center>
                 <Title>Useful Links</Title>
                 <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Accessories</ListItem>
+                    <ListItem><StyledLink to="/">Home</StyledLink></ListItem>
+                    <ListItem><StyledLink to="/Cart">Cart</StyledLink></ListItem>
                     <ListItem>My Account</ListItem>
                     <ListItem>Order Tracking</ListItem>
                     <ListItem>Wishlist</ListItem>
@@ -123,7 +129,7 @@ const Footer = () => {
                     <PhoneAndroidOutlined style={{ marginRight: "10px" }} /> +5 555 55 55
                 </ContactItem>
                 <ContactItem>
-                    <MailOutlined  style={{ marginRight: "10px" }} /> contact@Bgame.game
+                    <MailOutlined style={{ marginRight: "10px" }} /> contact@Bgame.game
                 </ContactItem>
                 <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
             </Right>

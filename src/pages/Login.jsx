@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import { mobile } from '../Responsive';
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
 width: 100vw;
@@ -43,7 +44,7 @@ const Button = styled.button`
 width: 30%;
 border: none;
 padding: 10px 8px;
-background-color: teal;
+background-color: #4e2dbb;
 color: white;
 cursor: pointer;
 margin-bottom: 10px;
@@ -53,11 +54,16 @@ margin-bottom: 10px;
 }
 `;
 
-const Link = styled.a`
+const A = styled.a`
 margin: 5px 0;
 font-size: 15px;
 text-decoration: underline;
 cursor: pointer;
+`;
+
+const StyledLink = styled(Link)`
+text-decoration: none;
+color: white;
 `;
 
 const Login = () => {
@@ -66,12 +72,12 @@ const Login = () => {
             <Wrapper>
                 <Title>Sign In</Title>
                 <Form>
-                    <Input placeholder="username" />
-                    <Input placeholder="password" />
-                
-                    <Button>Login</Button>
-                    <Link>Forgot Password?</Link>
-                    <Link>Create A New Account</Link>
+                    <Input required placeholder="username" />
+                    <Input required placeholder="password" />
+
+                    <Button><StyledLink to="/">LOGIN</StyledLink></Button>
+                    <A>Forgot Password?</A>
+                    <A>Create A New Account</A>
                 </Form>
             </Wrapper>
         </Container>

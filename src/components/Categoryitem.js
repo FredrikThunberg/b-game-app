@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../Responsive";
 
@@ -31,29 +32,33 @@ color: white;
 text-shadow: 2px 2px black;
 margin-bottom: 20px;
 `;
-const Button = styled.button`
+
+
+const StyledLink = styled(Link)`
 border: none;
+border-radius: 2px;
 padding: 10px;
 background-color: white;
 color: gray;
 cursor: pointer;
+text-decoration: none;
 
 &:hover{
+    
     background-color: grey;
     color: white;
 }
 `;
 
-
-const Categoryitem = ({item}) => {
+const Categoryitem = ({ item }) => {
     return (
-    <Container>
-        <Image src={item.img} />
-        <Info>
-            <Title>{item.title}</Title>
-            <Button>SHOP NOW</Button>
-        </Info>
-    </Container>
+        <Container>
+            <Image src={item.img} />
+            <Info>
+                <Title>{item.title}</Title>
+                <StyledLink to="/ProductList">SHOP NOW</StyledLink>
+            </Info>
+        </Container>
     )
 }
 

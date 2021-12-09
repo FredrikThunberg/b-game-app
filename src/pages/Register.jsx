@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
 import { mobile } from '../Responsive';
+import { Link } from "react-router-dom";
+
+
 
 const Container = styled.div`
 width: 100vw;
@@ -49,7 +52,7 @@ const Button = styled.button`
 width: 40%;
 border: none;
 padding: 10px 8px;
-background-color: teal;
+background-color: #4e2dbb;
 color: white;
 cursor: pointer;
 
@@ -58,26 +61,34 @@ cursor: pointer;
 }
 `;
 
+const StyledLink = styled(Link)`
+text-decoration: none;
+color: white;
+`;
+
 
 const Register = () => {
+
+
+
     return (
         <Container>
-        <Wrapper>
+            <Wrapper>
                 <Title>Create An Account</Title>
                 <Form>
-                    <Input placeholder="name" />
-                    <Input placeholder="last name" />
-                    <Input placeholder="username" />
-                    <Input placeholder="email" />
-                    <Input placeholder="password" />
-                    <Input placeholder="confirm password" />
+                    <Input required placeholder="name" />
+                    <Input required placeholder="last name" />
+                    <Input required placeholder="username" />
+                    <Input required placeholder="email" />
+                    <Input required placeholder="password" />
+                    <Input required placeholder="confirm password" />
                     <Agreement>
                         By creating an account, I consent to the processing of my personal
                         data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
-                    <Button>Create</Button>
+                    <Button><StyledLink to="/">Create</StyledLink></Button>
                 </Form>
-        </Wrapper>        
+            </Wrapper>
         </Container>
     )
 }

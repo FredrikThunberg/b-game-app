@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AddOutlined, Remove } from "@material-ui/icons";
 import styled from 'styled-components';
 import Announcement from '../components/Announcement';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { mobile } from '../Responsive';
+import { Link } from 'react-router-dom';
+
 
 
 const Container = styled.div``;
@@ -31,8 +33,7 @@ const TopButton = styled.button`
   font-weight: 600;
   cursor: pointer;
   border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-    props.type === "filled" ? "grey" : "transparent"};
+  background-color: ${(props) => props.type === "filled" ? "grey" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
   &:hover{
     background-color: grey;
@@ -145,7 +146,7 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: teal;
+  background-color: #4e2dbb;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -155,8 +156,50 @@ const Button = styled.button`
   }
 `;
 
+//---------------------------------------------------------
+//incresment and decresment only for the products(games)
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color:black;
+`;
 
 const Cart = () => {
+
+  const [products, setProducts] = useState({
+    count: 1
+  });
+
+  const handleChange = (e) => {
+    setProducts({ count: e.target.value || 0 });
+  };
+
+  const decrease = (e) => {
+    if (products.count <= 0) {
+      return;
+    }
+    setProducts({ count: products.count - 1 });
+
+  };
+
+  //---------------------------------------------------------
+
+  const [product, setProduct] = useState({
+    count: 1
+  });
+
+  const handleChanges = (e) => {
+    setProducts({ count: e.target.value || 0 });
+  };
+
+  const decreases = (e) => {
+    if (product.count <= 0) {
+      return;
+    }
+    setProduct({ count: product.count - 1 });
+  };
+
+
   return (
     <Container>
       <Navbar />
@@ -164,7 +207,7 @@ const Cart = () => {
       <Wrapper>
         <Title>Your Cart</Title>
         <Top>
-          <TopButton>Continue Shopping</TopButton>
+          <TopButton><StyledLink to="/ProductList">Continue Shopping</StyledLink></TopButton>
           <TopTexts>
             <TopText>Shopping Bag (2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
@@ -186,9 +229,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <AddOutlined />
-                  <ProductAmount>2</ProductAmount>
-                  <Remove />
+                  <AddOutlined onClick={() => setProducts({ count: products.count + 1 })} />
+                  <ProductAmount onChange={handleChange} >{products.count}</ProductAmount>
+                  <Remove onClick={decrease} />
                 </ProductAmountContainer>
                 <ProductPrice>$ 33</ProductPrice>
               </PriceDetail>
@@ -205,9 +248,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <AddOutlined />
-                  <ProductAmount>1</ProductAmount>
-                  <Remove />
+                  <AddOutlined onClick={() => setProduct({ count: product.count + 1 })} />
+                  <ProductAmount onChange={handleChanges} >{product.count}</ProductAmount>
+                  <Remove onClick={decreases} />
                 </ProductAmountContainer>
                 <ProductPrice>$ 15</ProductPrice>
               </PriceDetail>
@@ -217,7 +260,7 @@ const Cart = () => {
             <SummaryTitle>Order Summary</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ 47</SummaryItemPrice>
+              <SummaryItemPrice>$ 48</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
@@ -225,11 +268,11 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+              <SummaryItemPrice>$ 0</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
+              <SummaryItemPrice>$ 53.9</SummaryItemPrice>
             </SummaryItem>
             <Button>Checkout Now</Button>
           </Summary>
