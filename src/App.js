@@ -13,19 +13,19 @@ import ScrollToTop from "./components/Scrolltotop";
 const App = () => {
   return <div>
 
-    <HashRouter basename={process.env.PUBLIC_URL} >
+    
       <ScrollToTop>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/Login' element={<Login />} />
-          <Route exact path="/Register" element={<Register />} />
-          <Route exact path="/Cart" element={<Cart />} />
-          <Route exact path="/ProductList" element={<ProductList />} />
-          <Route exact path="/ProductPage" element={<ProductPage />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/ProductList" element={<ProductList />} />
+          <Route path="/ProductPage" element={<ProductPage />} />
           {/* <Route path="/Products" element={<Products />} /> */}
         </Routes>
       </ScrollToTop>
-    </HashRouter>
+    
 
   </div>
 
