@@ -18,17 +18,21 @@ Why not make an "amazon" website but intended for the board game scene and here 
 
 
 ## Hompage ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgame1.png)
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgame2.png)
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgame3.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgame1.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgame2.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgame3.png)
+
+
+## Newspage ##
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgamenewsandfooter.png)
 
 ## Product page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgameproductpage.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgameproductpage.png)
 
 ## Create account page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgamereg.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgamereg.png)
 
 ## Cart page ##
-![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/master/B-game%20pics/bgamecart.png)
+![Alt text](https://github.com/FredrikThunberg/b-game-app/blob/main/B-game%20pics/bgamecart.png)
 
 *This page is only for me as a project to develop my skills*
