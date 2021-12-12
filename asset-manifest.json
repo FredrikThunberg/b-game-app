@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/FredrikThunberg/B-game-app.git/static/js/main.e8e05f69.chunk.js",
-    "main.js.map": "/FredrikThunberg/B-game-app.git/static/js/main.e8e05f69.chunk.js.map",
-    "runtime-main.js": "/FredrikThunberg/B-game-app.git/static/js/runtime-main.cd43acb2.js",
-    "runtime-main.js.map": "/FredrikThunberg/B-game-app.git/static/js/runtime-main.cd43acb2.js.map",
-    "static/js/2.2ec1c783.chunk.js": "/FredrikThunberg/B-game-app.git/static/js/2.2ec1c783.chunk.js",
-    "static/js/2.2ec1c783.chunk.js.map": "/FredrikThunberg/B-game-app.git/static/js/2.2ec1c783.chunk.js.map",
-    "index.html": "/FredrikThunberg/B-game-app.git/index.html",
-    "static/js/2.2ec1c783.chunk.js.LICENSE.txt": "/FredrikThunberg/B-game-app.git/static/js/2.2ec1c783.chunk.js.LICENSE.txt"
+    "main.js": "/FredrikThunberg/b-game-app.git/static/js/main.f2d62d41.chunk.js",
+    "main.js.map": "/FredrikThunberg/b-game-app.git/static/js/main.f2d62d41.chunk.js.map",
+    "runtime-main.js": "/FredrikThunberg/b-game-app.git/static/js/runtime-main.8b56263b.js",
+    "runtime-main.js.map": "/FredrikThunberg/b-game-app.git/static/js/runtime-main.8b56263b.js.map",
+    "static/js/2.1295b66d.chunk.js": "/FredrikThunberg/b-game-app.git/static/js/2.1295b66d.chunk.js",
+    "static/js/2.1295b66d.chunk.js.map": "/FredrikThunberg/b-game-app.git/static/js/2.1295b66d.chunk.js.map",
+    "index.html": "/FredrikThunberg/b-game-app.git/index.html",
+    "static/js/2.1295b66d.chunk.js.LICENSE.txt": "/FredrikThunberg/b-game-app.git/static/js/2.1295b66d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd43acb2.js",
-    "static/js/2.2ec1c783.chunk.js",
-    "static/js/main.e8e05f69.chunk.js"
+    "static/js/runtime-main.8b56263b.js",
+    "static/js/2.1295b66d.chunk.js",
+    "static/js/main.f2d62d41.chunk.js"
   ]
 }
